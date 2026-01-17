@@ -1,25 +1,14 @@
-
-import './App.css'
-import AboutUs from './Sections/AboutUs'
-import Footer from './Sections/Footer'
-import GlobalPromotion from './Sections/GlobalPromotion'
-import HowItWorks from './Sections/HowItWorks'
-import Landing from './Sections/Landing'
-import Nav from './Sections/Nav'
-import PopularPackages from './Sections/PopularPackages'
-
+import "./index.css";
+import Home from "./Pages/Home";
+import { Route, Routes } from "react-router-dom";
 function App() {
   
 
   return (
     <>
-      <Nav />
-      <Landing />
-      <HowItWorks />
-      <AboutUs />
-      <PopularPackages />
-      <GlobalPromotion />
-      <Footer />    
+      <Routes>
+      <Route path="/" element={<Home />} /> 
+    </Routes>
     </>
   )
 }
