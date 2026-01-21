@@ -21,8 +21,8 @@ export default function MobileMenu({
               onClick={() => setActiveLink(link.name)}  
               className={`block text-[15px] font-medium transition-colors duration-200 ${
                 activeLink === link.name
-                  ? "text-[#00E5CC]"
-                  : "text-gray-500 hover:text-[#060640]"
+                  ? "text-secondary"
+                  : "text-gray-500 hover:text-primary"
               }`}
             >
               {link.name}
@@ -32,10 +32,10 @@ export default function MobileMenu({
       </ul>
 
       <div className="px-6 pb-6 flex flex-col gap-3">
-        <button className="text-[15px] font-semibold text-[#060640] opacity-70 hover:opacity-100 transition-opacity">
+        <button className="text-[15px] font-semibold text-primary opacity-70 hover:opacity-100 transition-opacity">
           Sign In
         </button>
-        <button className="bg-[#060640] text-white px-6 py-3 rounded-md text-[15px] font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+        <button className="bg-primary text-white px-6 py-3 rounded-md text-[15px] font-semibold hover:bg-opacity-90 transition-all shadow-lg">
           Free Trial
         </button>
       </div>

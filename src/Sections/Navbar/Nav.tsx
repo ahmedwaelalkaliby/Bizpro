@@ -16,14 +16,14 @@ export default function Nav() {
   ];
 
   return (
-    <nav className="bg-white shadow-sm">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+    <nav className="w-full">
+      <div className="container absolute top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 bg-white shadow-md mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-1">
-          <span className="text-2xl font-bold tracking-tight text-[#00E5CC]">
+          <span className="text-2xl font-bold tracking-tight text-secondary">
             B
           </span>
-          <span className="text-2xl font-bold tracking-tight text-[#060640]">
+          <span className="text-2xl font-bold tracking-tight text-primary">
             izpro
           </span>
         </div>
@@ -37,8 +37,8 @@ export default function Nav() {
                 onClick={() => setActiveLink(link.name)}
                 className={`text-[15px] font-medium transition-colors duration-200 ${
                   activeLink === link.name
-                    ? "text-[#00E5CC]"
-                    : "text-gray-500 hover:text-[#060640]"
+                    ? "text-secondary"
+                    : "text-gray-500 hover:text-primary"
                 }`}
               >
                 {link.name}
@@ -49,10 +49,10 @@ export default function Nav() {
 
         {/* Action Buttons */}
         <div className="hidden md:flex items-center gap-4">
-          <button className="text-[15px] font-semibold text-[#060640] opacity-70 hover:opacity-100 transition-opacity">
+          <button className="text-[15px] font-semibold text-primary opacity-70 hover:opacity-100 transition-opacity">
             Sign In
           </button>
-          <button className="bg-[#060640] text-white px-6 py-3 rounded-md text-[15px] font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+          <button className="bg-primary text-white px-6 py-3 rounded-md text-[15px] font-semibold hover:bg-opacity-90 transition-all shadow-lg">
             Free Trial
           </button>
         </div>
@@ -63,7 +63,7 @@ export default function Nav() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
-            className="w-7 h-7 text-[#060640]"
+            className="w-7 h-7 text-primary"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
