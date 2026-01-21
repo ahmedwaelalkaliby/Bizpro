@@ -29,7 +29,7 @@ export default function VideoBrowser() {
         {/* Video */}
         <div className="relative aspect-[4/3] bg-slate-50">
           <img
-            src="public/presenter.svg"
+            src="public/Images/presenter.svg"
             className="w-full h-full object-cover"
             alt="Presenter"
           />
