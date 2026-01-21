@@ -11,7 +11,7 @@ export default function Landing() {
         <div className="flex flex-col gap-8">
           <div className="relative">
             {/* The semi-circle accent above "Perfect" */}
-            <div className="absolute -top-2 left-[7rem] w-10 h-5 border-t-4 border-secondary rounded-t-full" />
+            <div className="absolute -top-4 left-[22%] -translate-x-1/2 w-10 h-5 border-t-4 border-l-4 border-r-4 border-secondary rounded-t-full"></div>
             
             <h1 className="text-2xl lg:text-5xl font-extrabold text-primary leading-[1.15]">
               Perfect place for <br/>
