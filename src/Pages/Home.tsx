@@ -1,6 +1,6 @@
 import AboutUs from '../Sections/About Us/AboutUs'
 import Footer from '../Sections/Footer/Footer'
-import GlobalPromotion from '../Sections/GlobalPromotion'
+import GlobalPromotion from '../Sections/Global Promotion/GlobalPromotion'
 import HowItWorks from '../Sections/How It Works/HowItWorks'
 import Landing from '../Sections/Hero/Landing'
 import Nav from '../Sections/Navbar/Nav'
